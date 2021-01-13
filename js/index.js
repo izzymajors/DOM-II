@@ -18,12 +18,12 @@ const navBar = document.querySelectorAll('nav a');
     })
  })
 
- const navLinks = document.getElementsByTagName("nav a");
-navLinks.forEach((item) => {
-  item.addEventListener("click", function (event) {
-    navLinks.innerHTML += "Sorry can't do that!";
-    event.preventDefault();
-  });
+//  const navLinks = document.getElementsByTagName("nav a");
+// navLinks.forEach((item) => {
+//   item.addEventListener("click", function (event) {
+//     navLinks.innerHTML += "Sorry can't do that!";
+//     event.preventDefault();
+//   });
 
 //  const buttonElement = document.getElementById('btn');
 
@@ -38,3 +38,9 @@ navLinks.forEach((item) => {
 //     alert('Element clicked through handleEvent property!');
 //   }
 // });
+
+function escKey(event){
+  
+}
+
+document.addEventListener("keydown",escKey)
