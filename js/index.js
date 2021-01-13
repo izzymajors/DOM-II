@@ -1,4 +1,7 @@
 // Your code goes here
+
+
+
 const navBar = document.querySelectorAll('nav a');
     Array.from(navBar).forEach(elem => {
         elem.addEventListener('click', function(event){
@@ -14,3 +17,8 @@ const navBar = document.querySelectorAll('nav a');
        item.style.opacity = '0.5';
     })
  })
+
+ const btn = document.getElementsByClassName("btn");
+ btn.addEventListener('focusin', function(event) {
+     
+ });
