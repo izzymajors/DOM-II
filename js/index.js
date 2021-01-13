@@ -18,7 +18,23 @@ const navBar = document.querySelectorAll('nav a');
     })
  })
 
- const btn = document.getElementsByClassName("btn");
- btn.addEventListener('focusin', function(event) {
-     
- });
+ const navLinks = document.getElementsByTagName("nav a");
+navLinks.forEach((item) => {
+  item.addEventListener("click", function (event) {
+    navLinks.innerHTML += "Sorry can't do that!";
+    event.preventDefault();
+  });
+
+//  const buttonElement = document.getElementById('btn');
+
+
+// buttonElement.addEventListener('click', function (event) {
+//   alert('Element clicked through function!');
+// });
+
+
+// buttonElement.addEventListener('click', {
+//   handleEvent: function (event) {
+//     alert('Element clicked through handleEvent property!');
+//   }
+// });
